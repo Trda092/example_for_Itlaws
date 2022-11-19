@@ -105,7 +105,8 @@ app.post('/del', (req, res) => {
     var delname = req.body.username;
     var count = 0
     db.query("SELECT role FROM user WHERE username = ?",[delname], function (err, result, fields) {
-    if (req.session.role == "ceo" && result[0].role != 'ceo') {
+    if (req.session.role == "ceo") {
+        if (result[0].role != 'ceo'){
         db.query("SELECT * FROM user", function (err, result, fields) {
             count = result.length
         });
@@ -119,7 +120,7 @@ app.post('/del', (req, res) => {
                 res.send("Don't have this user")
             }
             res.end();
-        })
+        })}
     } else {
         res.status(403);
         res.send('Reject deny')
