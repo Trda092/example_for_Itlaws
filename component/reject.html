@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Node reject</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .reject-form{
+                width: 300px;
+                margin: 0 auto;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            .reject-form h1{
+                text-align: center;
+                color: #4d4d4d;
+                font-size: 24px;
+                padding: 20px;
+            }
+            .reject-form input[type="text"]{
+                width: 100%;
+                padding:15px;
+                border:1px solid black;
+                margin-bottom: 15px;
+                box-sizing:border-box;
+            }
+            .reject-form input[type="submit"]{
+                width:100%;
+                padding: 15px;
+                background-color: #535b63;
+
+            }
+        </style>
+    </head>
+    <body>
+    <div class="reject-form">
+        <h1>Reject Form</h1>
+        <form action="/del" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="submit">
+        </form>
+    </div>
+    </body>
+</html>

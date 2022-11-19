@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Node Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .main-page{
+                width: 300px;
+                margin: 0 auto;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            .main-page h1{
+                text-align: center;
+                color: #4d4d4d;
+                font-size: 24px;
+                padding: 20px;
+            }
+            .main-page button{
+                width: 100%;
+                align-items: center;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="main-page">
+        <h1>Home</h1>
+        <form action="/access" method="get">
+            <button name="view_grade">View Your Task</button>
+        </form>
+        <form action="/accessAll" method="get">
+            <button name="view_all_grade">View All Tasks</button>
+        </form>
+        <form action="/reject" method="get">
+            <button name="reject">Reject</button>
+        </form>
+    </div>
+    </body>
+</html>
