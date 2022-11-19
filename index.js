@@ -104,23 +104,24 @@ app.get('/rejectPage', (req, res) => {
 app.post('/del', (req, res) => {
     var delname = req.body.username;
     var count = 0
-    db.query("SELECT role FROM user WHERE username = ?",[delname], function (err, result, fields) {
-    if (req.session.role == "ceo") {
-        if (result[0].role != 'ceo'){
-        db.query("SELECT * FROM user", function (err, result, fields) {
-            count = result.length
+    db.query("SELECT * FROM user WHERE username = ?",[delname], function (err, result, fields) {
+        req.session.allowRole = result[0].role;
+        console.log(result)
+    if (req.session.role == "ceo" && result[0].role != 'ceo') {
+        db.query("SELECT * FROM user", function (err, oldresult, fields) {
+            count = oldresult.length
         });
-        db.query("DELETE FROM user WHERE username = ?", [delname], function (err, result, fields) {
-            console.log(result)
+        db.query("DELETE FROM user WHERE username = ?", [delname], function (err, resltd, fields) {
+            console.log(resltd)
         });
-        db.query("SELECT * FROM user", function (err, result, fields) {
-            if (result.length < count) {
+        db.query("SELECT * FROM user", function (err, newresult, fields) {
+            if (newresult.length < count) {
                 res.send(delname + " was rejected")
             } else {
                 res.send("Don't have this user")
             }
             res.end();
-        })}
+        })
     } else {
         res.status(403);
         res.send('Reject deny')
