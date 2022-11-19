@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const os = require("os");
 const port = 3000;
 const app = express();
-var tasks = ["config system", "base-line config", "manage-queue", "config system"]
+var tasks = ["config system", "base-line config", "manage-queue", "config system", "base-line config", "manage-queue", "config system"]
 
 app.use(session({
     secret: 'secret',
@@ -40,6 +40,7 @@ app.post('/auth', (req, res) => {
             }
             res.end();
         })
+        
     } else {
         res.send("Please enter Username and Password");
         res.end();
