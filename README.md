@@ -1,9 +1,8 @@
-# example_for_Itlaws
+
 type this on terminal 
 
-# npm install express express-session mysql2
+. npm install express express-session mysql2
 
 for run server
 type this
-
-# node index.js
+. node index.js
