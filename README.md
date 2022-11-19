@@ -9,20 +9,25 @@ type this
 
 . node index.js
 
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+#username
+
 employee
 
-username: Trdas
+-username: Trdas
 
-password: tadaohm1234
+-password: tadaohm1234
 
 leader
 
-username: Goten
+-username: Goten
 
-password: SERjkjhiu
+-password: SERjkjhiu
 
 ceo
 
-username: CEO
+-username: CEO
 
-password: adminadmin
+-password: adminadmin
