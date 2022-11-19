@@ -8,3 +8,21 @@ for run server
 type this
 
 . node index.js
+
+employee
+
+username: Trdas
+
+password: tadaohm1234
+
+leader
+
+username: Goten
+
+password: SERjkjhiu
+
+ceo
+
+username: CEO
+
+password: adminadmin
