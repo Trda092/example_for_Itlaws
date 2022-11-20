@@ -1,39 +1,37 @@
 
-type this on terminal 
+#### type this on terminal 
+- npm install express express-session mysql2
 
-. npm install express express-session mysql2
+#### for run server type this
+- node index.js
 
-for run server
-
-type this
-
-. node index.js
+------------
 
 
+#### username
 
---------------------------------------------------------------------------------------------------------------------------------
-###### username
+##### employee
 
-employee
+- username: Trdas
 
--username: Trdas
+- password: tadaohm1234
 
--password: tadaohm1234
+##### leader
 
-leader
+- username: Chaowat
 
--username: Chaowat
+- password: tenten
 
--password: tenten
+##### ceo
 
-ceo
+- username: CEO
 
--username: CEO
-
--password: adminadmin
+- password: adminadmin
 
 
---------------------------------------------------------------------------------------------------------------------------------
-test-del-user
-
-test1 ,test2 ,test3
+------------
+#### test delete user
+##### user
+- test1 
+- test2 
+- test3
