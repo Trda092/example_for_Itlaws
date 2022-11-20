@@ -10,23 +10,11 @@
 
 #### username
 
-##### employee
-
-- username: Trdas
-
-- password: tadaohm1234
-
-##### leader
-
-- username: Chaowat
-
-- password: tenten
-
-##### ceo
-
-- username: CEO
-
-- password: adminadmin
+| Role  | username  | password  |
+| :------------: | :------------: | :------------: |
+|  employee |  Trdas |  tadaohm1234 |
+|  leader | Chaowat  | tenten  |
+| ceo  | CEO  | adminadmin  |
 
 
 ------------
